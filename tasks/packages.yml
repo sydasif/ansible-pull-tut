@@ -1,4 +1,9 @@
-  - name: install git on localhost
-    apt:
-      name: git
-      state: latest
+- name: install git on localhost
+  apt:
+    name:
+      - git 
+      - tree
+      - net-tools
+      - vim
+      - nano  
+    state: absent
