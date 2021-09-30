@@ -6,4 +6,4 @@
       - net-tools
       - vim
       - nano  
-    state: absent
+    state: latest
