@@ -1,7 +1,6 @@
 ---
 - name: Ansible Pull Playbook
   hosts: localhost
-  become: yes
   tasks:
     - name: install git on localhost
       apt:
