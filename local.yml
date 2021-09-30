@@ -1,10 +1,14 @@
 ---
-- name: Ansible Pull Playbook
+- name: ansible-pull-playbook
   hosts: localhost
   connection: local
   become: true
-  tasks:
-    - name: install git on localhost
+  pre_tasks:
+    - name: uddate repo
       apt:
-        name: git
-        state: latest
+        update_cache: yes
+     changed_when: False
+
+  tasks:
+    - include: tasks/packages.yml
+
