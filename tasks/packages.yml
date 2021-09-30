@@ -1,4 +1,4 @@
-- name: install git on localhost
+- name: install package
   apt:
     name:
       - git 
