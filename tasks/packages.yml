@@ -6,5 +6,5 @@
       - net-tools
       - vim
       - nano 
-      - ipython  
+      - ipython3
     state: latest
