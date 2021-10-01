@@ -1,10 +1,10 @@
-- name: install package
+- name: installing package
   apt:
     name:
       - git 
       - tree
       - net-tools
-      - vim
+      - vim-nox
       - nano 
       - ipython3
     state: latest
