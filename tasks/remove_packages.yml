@@ -1,0 +1,5 @@
+- name: removing package
+  apt:
+    name:
+      - vim
+    state: absent 
